@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "CETH"
+    },
+    "motivations": {
+      "@value": "I want to empower stakeholders by ensuring that every vote I cast reflects the shared vision of progress, fairness, and decentralization. By participating actively and thoughtfully, I hope to help shape Cardano's future into one where it not only thrives as a blockchain platform but also exemplifies the potential of decentralized governance to create positive global change."
+    },
+    "objectives": {
+      "@value": "I believe in the transformative power of decentralized governance to shape the future of blockchain ecosystems like Cardano. At its core, Cardano represents innovation, transparency, and inclusivity, values that I am deeply passionate about. \n\n"
+    },
+    "paymentAddress": {
+      "@value": "addr1q98rxw9algqta0jwylad20jglmn2cpzjr3v8h3ea4l322wkql3sgggmzlgcmrqhhlcusxw3xkkyy2ecafe4h7vc43sdqk2wjsm"
+    },
+    "qualifications": {
+      "@value": "Experienced Stake Pool Operator: I have been actively managing a stake pool in the Cardano ecosystem since its inception. \n\nLongstanding Commitment to Cardano: Being part of the ecosystem from the beginning has allowed me to witness and contribute to its growth and evolution. \n\nCommunity Engagement: Over the years, I’ve built strong connections with fellow stakeholders, developers, and participants in the ecosystem, giving me a well-rounded perspective on the community’s aspirations and challenges."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Cardano Thailand Facebook group"
+        },
+        "uri": {
+          "@value": "https://www.facebook.com/share/g/18DdJnMoyc/"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "CETH Line group"
+        },
+        "uri": {
+          "@value": "https://line.me/ti/g2/30XbZpGlJtE1Gtv3wQOMlQ4rqITEMG2z-SIRQA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Cardano Thailand Facebook group"
+        },
+        "uri": {
+          "@value": "https://www.facebook.com/share/g/18DdJnMoyc/"
+        }
+      }
+    ]
+  }
+}
